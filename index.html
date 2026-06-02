@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>祁梦の失重舱</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="wavefield" aria-hidden="true"></canvas>
+    <main class="app-shell">
+      <section class="player-panel" aria-label="祁梦の失重舱">
+        <div class="visual-column">
+          <div class="top-bar">
+            <div>
+              <h1 class="brand-title">祁梦の失重舱</h1>
+            </div>
+            <button class="icon-button" id="themeButton" type="button" aria-label="切换视觉主题" title="切换视觉主题">
+              <span>◐</span>
+            </button>
+          </div>
+
+          <div class="cover-stage">
+            <div class="cover-glow"></div>
+            <div class="album-cover" id="albumCover">
+              <div class="cover-shine"></div>
+            </div>
+            <canvas id="spectrum" width="620" height="260" aria-label="音乐频谱可视化"></canvas>
+          </div>
+
+          <div class="track-meta">
+            <div>
+              <h2 id="trackTitle">Out For Love</h2>
+              <p id="trackArtist">Daphne Rubin-Vega, Andrew Underberg, Sam Haft</p>
+            </div>
+            <div class="bpm-pill"><span id="trackBpm">132</span> BPM</div>
+          </div>
+
+          <div class="progress-wrap">
+            <span id="currentTime">0:00</span>
+            <input id="seekBar" type="range" min="0" max="100" value="0" aria-label="播放进度" />
+            <span id="duration">0:00</span>
+          </div>
+
+          <div class="controls">
+            <button class="icon-button" id="prevButton" type="button" aria-label="上一首" title="上一首">‹</button>
+            <button class="play-button" id="playButton" type="button" aria-label="播放">
+              <span id="playIcon">▶</span>
+            </button>
+            <button class="icon-button" id="nextButton" type="button" aria-label="下一首" title="下一首">›</button>
+            <label class="volume-control" aria-label="音量">
+              <span>♪</span>
+              <input id="volume" type="range" min="0" max="1" step="0.01" value="0.72" />
+            </label>
+          </div>
+        </div>
+
+        <aside class="side-column">
+          <div class="lyrics-card">
+            <div class="section-head">
+              <h2>动态歌词</h2>
+              <span id="moodLabel">out for love</span>
+            </div>
+            <div class="lyrics-window" id="lyricsWindow" aria-live="polite"></div>
+          </div>
+
+          <div class="playlist-card">
+            <div class="section-head">
+              <h2>播放列表</h2>
+              <span id="trackCount">0 首</span>
+            </div>
+            <div class="playlist" id="playlist"></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

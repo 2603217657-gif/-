@@ -2,7 +2,7 @@ const tracks = [
   {
     title: "Out For Love",
     artist: "Daphne Rubin-Vega, Andrew Underberg, Sam Haft",
-    src: "file:///C:/Users/Qi/Downloads/Daphne Rubin-Vega,Andrew Underberg,Sam Haft - Out For Love.mp3",
+    src: "audio/Daphne Rubin-Vega,Andrew Underberg,Sam Haft - Out For Love.mp3",
     cover: "covers/out-for-love.jpg",
     durationFallback: 86,
     bpm: 132,
@@ -35,7 +35,7 @@ const tracks = [
   {
     title: "Losin' Streak",
     artist: "Hazbin Hotel, Blake Roman, Sam Haft",
-    src: "file:///C:/Users/Qi/Downloads/Hazbin Hotel,Blake Roman,Sam Haft - Losin' Streak.mp3",
+    src: "audio/Hazbin Hotel,Blake Roman,Sam Haft - Losin' Streak.mp3",
     cover: "covers/losin-streak.jpg",
     durationFallback: 132,
     bpm: 124,
@@ -72,7 +72,7 @@ const tracks = [
   {
     title: "Gravity",
     artist: "Hazbin Hotel, Jessica Vosk, Alex Brightman",
-    src: "file:///C:/Users/Qi/Downloads/Hazbin Hotel,Jessica Vosk,Alex Brightman - Gravity.mp3",
+    src: "audio/Hazbin Hotel,Jessica Vosk,Alex Brightman - Gravity.mp3",
     cover: "covers/gravity.jpg",
     durationFallback: 114,
     bpm: 104,
@@ -118,7 +118,7 @@ const tracks = [
   {
     title: "Easy",
     artist: "Hazbin Hotel, Stephanie Beatriz, Erika Henningsen",
-    src: "file:///C:/Users/Qi/Downloads/Hazbin Hotel,Stephanie Beatriz,Erika Henningsen - Easy.mp3",
+    src: "audio/Hazbin Hotel,Stephanie Beatriz,Erika Henningsen - Easy.mp3",
     cover: "covers/easy.jpg",
     durationFallback: 104,
     bpm: 112,
@@ -171,7 +171,7 @@ const tracks = [
   {
     title: "R·I·O·T",
     artist: "RAISE A SUILEN",
-    src: "file:///C:/Users/Qi/Downloads/RAISE A SUILEN - R·I·O·T.mp3",
+    src: "audio/RAISE A SUILEN - R·I·O·T.mp3",
     cover: "covers/riot.jpg",
     durationFallback: 250,
     bpm: 185,
